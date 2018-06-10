@@ -19,6 +19,20 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 ```
     pacman -S php
 ```
+1.3 Configurando OPCACHE PHP <br>
+[2] -> Acesse o arquivo /etc/php/php.ini, e descomente as linhas correspondentes 
+```
+zend_extension=opcache.so
+opcache.enable=1
+opcache.validate_timestamps=0
+opcache.max_accelerated_files=3000
+opcache.memory_consumption=64
+opcache.interned_strings_buffer=12
+opcache.fast_shutdown=1
+opcache.enable_file_override=1
+opcache.error_log=/var/log/php-opcache-error.log
+```
+**OBS opcache.validade_timestramps quando for para produção, passe o valor=1, pois o value 0 limpa cache** <br>
 **2. Instalando Apache** <br>
 2.1 Ubuntu / Mint / Elementary e Outros
 ``` 
