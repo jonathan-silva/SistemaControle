@@ -1,0 +1,25 @@
+{
+  "name": "inep.controle",
+  "version": "1.0.0",
+  "description": "System Control INEP",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rongqong/SistemaControle.git"
+  },
+  "author": "Jonathan Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rongqong/SistemaControle/issues"
+  },
+  "homepage": "https://github.com/rongqong/SistemaControle#readme",
+  "dependencies": {
+    "angular": "^1.4.8"
+  }
+}
