@@ -33,6 +33,23 @@ opcache.enable_file_override=1
 opcache.error_log=/var/log/php-opcache-error.log
 ```
 **OBS opcache.validade_timestramps quando for para produção, passe o valor=1, pois o value 0 limpa cache** <br>
+
+1.3 Instalando MEMCACHED <p>
+```
+    //Ubuntu/ Mint/ Elementary outros
+    apt-get install memcached libmemcached-tools
+    //Arch Linux
+    pacman -S memcached libmemcached
+```
+Configurando MEMCACHED 
+Acesse o arquivo ``` /etc/memcached.config ```
+```
+    systemctl enable memcached.service
+    systemctl start memcached.service
+    //Para testar se memcached foi instalado corretamente
+    sudo memcached -d -m 512 -l 127.0.0.1 -p 11211 -u nobody
+    ps -eaf | grep memcached
+```
 **2. Instalando Apache** <br>
 2.1 Ubuntu / Mint / Elementary e Outros
 ``` 
