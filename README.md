@@ -108,7 +108,7 @@ npm -v
     //Arch Linux
     pacman -S composer    
  ```
- **6. Criando projeto Slim Framewwork 3.10** <br>
+**6. Criando projeto Slim Framewwork 3.10** <br>
  ```
     composer create-project slim/slim-skeleton nomedoprojeto
     composer init
@@ -117,3 +117,19 @@ npm -v
     //Depois starta o servidor
     php -S localhost -t public/ public/index.html
  ```
+**7. Instalando Docker** <br>
+7.1 Ubuntu / Mint / Elementary e Outros
+```
+    sudo apt install docker.io
+    sudo systemctl start docker
+    sudo systemctl enable docker
+    docker -v
+```
+7.2 Arch Linux
+```
+    pacman -S docker
+    systemctl enable docker.service
+    systemctl start docker.service
+    systemctl status docker.service
+    docker -v
+```
