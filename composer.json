@@ -1,0 +1,12 @@
+{
+    "name": "root/inep.controle",
+    "description": "System Control INEP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Silva",
+            "email": "jonathansilva.ti22@gmail.com"
+        }
+    ],
+    "require": {}
+}
