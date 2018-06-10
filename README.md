@@ -8,10 +8,15 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 
 [1] -> Observação ambiente foi prepado em Ambiente GNU/Linux
 
-**1. Ubuntu / Mint / Elementary e Outros** <br>
+**1. Instalando PHP-5.6** <br>
+1.1 Ubuntu / Mint / Elementary e Outros
 ``` sudo apt-get install python-software-properties
        sudo add-apt-repository ppa:ondrej/php
        sudo apt-get update
-       sudo apt-get install -y php5.6 It 
+       sudo apt-get install -y php5.6 
 ```       
+1.2 Arch Linux
+```
+    pacman -S php
+```
 
