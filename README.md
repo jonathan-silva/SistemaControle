@@ -19,7 +19,7 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 ```
     pacman -S php
 ```
-**2. Instalando Apache** 
+**2. Instalando Apache** <br>
 2.1 Ubuntu / Mint / Elementary e Outros
 ``` 
     sudo apt-get install apache2
@@ -28,6 +28,10 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 ```
     pacman -S apache
 ```
-Comente a linha onde se encontra ``#LoadModule unique_id_module modules/mod_unique_id.so``, e descomente a linha ``#LoadModule unique_id_module modules/mod_unique_id.so``
+COMENTE a linha onde se encontra 
+``#LoadModule unique_id_module modules/mod_unique_id.so``
+E DESCOMENTE a linha 
+``#LoadModule unique_id_module modules/mod_unique_id.so``
 <br/>
-Depois disso faça ``sudo systemctl enable httpd.service && sudo systemctl start httpd.service``
+Depois disso faça 
+``sudo systemctl enable httpd.service && sudo systemctl start httpd.service``
