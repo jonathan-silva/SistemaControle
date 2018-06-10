@@ -28,10 +28,13 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 ```
     pacman -S apache
 ```
-COMENTE a linha onde se encontra 
+<p>COMENTE a linha onde se encontra</p> 
 ``#LoadModule unique_id_module modules/mod_unique_id.so``
-E DESCOMENTE a linha 
+
+<p>E DESCOMENTE a linha</p> 
 ``#LoadModule unique_id_module modules/mod_unique_id.so``
-<br/>
-Depois disso faça 
+
+<p>Depois disso faça</p> 
 ``sudo systemctl enable httpd.service && sudo systemctl start httpd.service``
+
+
