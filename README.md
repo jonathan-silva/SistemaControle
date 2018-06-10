@@ -100,4 +100,20 @@ v8.11.2
 npm -v
 5.6.0
 ```
+**5. Instalando Composer** <br>
+5.1 Ambos a Distruibuição Linux
+ ```
+    //Ubuntu
+    sudo apt-get install composer
+    //Arch Linux
+    pacman -S composer    
+ ```
+ **6. Criando projeto Slim Framewwork 3.10** <br>
+ ```
+    composer create-project slim/slim-skeleton nomedoprojeto
+    composer init
+    composer install
     
+    //Depois starta o servidor
+    php -S localhost -t public/ public/index.html
+ ```
