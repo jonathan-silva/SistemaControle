@@ -10,7 +10,7 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 
 **1. Instalando PHP-5.6** <br>
 1.1 Ubuntu / Mint / Elementary e Outros
-``` sudo apt-get install python-software-properties
+```    sudo apt-get install python-software-properties
        sudo add-apt-repository ppa:ondrej/php
        sudo apt-get update
        sudo apt-get install -y php5.6 
@@ -19,4 +19,15 @@ Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 ```
     pacman -S php
 ```
-
+**2. Instalando Apache** 
+2.1 Ubuntu / Mint / Elementary e Outros
+``` 
+    sudo apt-get install apache2
+```
+2.2 Arch Linux
+```
+    pacman -S apache
+```
+Comente a linha onde se encontra ``#LoadModule unique_id_module modules/mod_unique_id.so``, e descomente a linha ``#LoadModule unique_id_module modules/mod_unique_id.so``
+<br/>
+Depois disso faça ``sudo systemctl enable httpd.service && sudo systemctl start httpd.service``
