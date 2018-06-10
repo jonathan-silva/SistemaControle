@@ -4,7 +4,7 @@
 Um Sistema para Controle de Custos Operacionais como por exemplo:
 Monitoramento de impressões de cada setor, o relatório de uso de ramais.
 
-#Preparando Ambiente de Desenvolvimento
+#<b>Preparando Ambiente de Desenvolvimento</br>
 
 [1] -> Observação ambiente foi prepado em Ambiente GNU/Linux
 
