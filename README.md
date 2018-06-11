@@ -50,6 +50,12 @@ Acesse o arquivo ``` /etc/memcached.config ```
     sudo memcached -d -m 512 -l 127.0.0.1 -p 11211 -u nobody
     ps -eaf | grep memcached
 ```
+1.4 Instalando e Configurando Xdebug PHP
+```
+   pacman -S xdebug
+   //Edite, e descomente todas as linhas do arquivo /etc/php/conf.d/xdebug.ini    
+   sudo vim /etc/php/conf.d/xdebug.ini    
+```       
 **2. Instalando Apache** <br>
 2.1 Ubuntu / Mint / Elementary e Outros
 ``` 
