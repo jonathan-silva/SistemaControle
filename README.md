@@ -96,8 +96,8 @@ Depois disso faça
 cd /usr/local/
 sudo wget https://nodejs.org/dist/v8.11.2/node-v8.11.2-linux-x64.tar.xz 
 sudo tar -Jxf node-v8.11.2-linux-x64.tar.xz
-sudo ln -sf /node-v8.11.2-linux-x64/bin/node /usr/bin/node
-sudo ln -sf /node-v8.11.2-linux-x64/bin/npm /usr/bin/npm
+sudo ln -sf node-v8.11.2-linux-x64/bin/node /usr/bin/node
+sudo ln -sf node-v8.11.2-linux-x64/bin/npm /usr/bin/npm
 
 //Depois Verifique as versões
 node -v
