@@ -66,9 +66,14 @@ COMENTE a linha onde se encontra
 
 E DESCOMENTE a linha
 ```
-    LoadModule unique_id_module modules/mod_unique_id.so
+    LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
 ```
-
+E ADICIONE ESSAS
+```
+    LoadModule php7_module modules/libphp7.so
+    AddHandler php7-script php
+    Include conf/extra/php7_module.conf
+```
 Depois disso faça
 ```
     sudo systemctl enable httpd.service && sudo systemctl start httpd.service
