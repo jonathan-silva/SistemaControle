@@ -138,3 +138,18 @@ npm -v
     systemctl status docker.service
     docker -v
 ```
+**8. Instalando Jenkins** <br>
+8.1 Ubuntu / Mint / Elementary e Outros
+```
+    wget -q -O - http://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+    sudo sh -c 'echo deb http://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+    sudo apt-get update
+    sudo apt-get install jenkins
+```
+8.2 Arch Linux
+```
+    sudo pacman -S jenkins
+    sudo systemctl start jenkins
+    sudo systemctl enable jenkins
+    sudo systemctl status jenkins
+```
