@@ -131,7 +131,7 @@ npm -v
 **7. Instalando Docker** <br>
 7.1 Ubuntu / Mint / Elementary e Outros
 ```
-    sudo apt install docker.io
+    sudo apt install docker.io docker
     sudo systemctl start docker
     sudo systemctl enable docker
     docker -v
